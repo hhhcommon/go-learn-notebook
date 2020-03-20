@@ -1,5 +1,8 @@
 # 【尚硅谷】新版 GO语言+区块链就业班 全套（600p完结）
 
+<iframe src="//player.bilibili.com/player.html?aid=75631089&cid=129380191&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" height="493" width="638">
+</iframe>
+
 https://www.bilibili.com/video/av75631089
 
 转载于尚硅谷，GO+区块链/比特币就业项目！

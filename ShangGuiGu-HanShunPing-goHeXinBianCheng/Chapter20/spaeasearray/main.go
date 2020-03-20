@@ -35,16 +35,17 @@ func showArr(arr *[3][3]int) {
 
 func main() {
 
-	var arr [3][3]int
+	// 1. 创建一个原始数组代表棋盘
+	var arr [3][3]int // 这里棋盘会被0初识化填充，0表示没有棋子
 
-	arr[0][0] = 1
-	arr[1][2] = 2
+	arr[0][0] = 1 // 数字1代表白子
+	arr[1][2] = 2 // 数字2代表黑子
 
 	fmt.Println("看一下原来的二维数组：")
 	showArr(&arr)
 
 	// 转换成稀疏数组
-
+	// 2. 创建一个又稀疏节点组成的数组
 	var sparseArr []Node
 	// 稀疏数组的第一个元素是记录整个二维数据的宽高和默认值
 	node := Node{
@@ -54,7 +55,7 @@ func main() {
 	}
 	sparseArr = append(sparseArr, node)
 
-	// 接下来遍历二维数据将特数据找出来放进稀疏数组
+	// 3. 转换：接下来遍历二维数据将特数据找出来放进稀疏数组
 	for i := 0; i < 2; i++ {
 		for j := 0; j < 2; j++ {
 			if arr[i][j] != 0 {
@@ -67,6 +68,7 @@ func main() {
 		}
 	}
 
+	// 4. 测试：打印看看那数据对不对
 	fmt.Println("接下来看看转换成稀疏数组后 记录了哪些值。")
 	for _, n := range sparseArr {
 		fmt.Printf("row: %d, colum: %d, value: %d\n", n.row, n.colum, n.value)
