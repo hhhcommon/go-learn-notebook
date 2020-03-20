@@ -1,0 +1,616 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>2020-03-20-go学习笔记 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言学习笔记-汇总
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.1" data-path="2020-03-20-go学习笔记.html">
+            
+                <a href="2020-03-20-go学习笔记.html">
+            
+                    
+                    2020-03-20-go学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    一、Go语言基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" >
+            
+                <span>
+            
+                    
+                    二、Go语言标准库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" >
+            
+                <span>
+            
+                    
+                    三、Go语言第三方库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" >
+            
+                <span>
+            
+                    
+                    四、Go语言项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" >
+            
+                <span>
+            
+                    
+                    五、尚硅谷Go语言学习笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.4.1" data-path="../ShangGuiGu-HanShunPing-goHeXinBianCheng/">
+            
+                <a href="../ShangGuiGu-HanShunPing-goHeXinBianCheng/">
+            
+                    
+                    课程目录【尚硅谷】新版 GO语言+区块链就业班 全套（600p完结）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" >
+            
+                <span>
+            
+                    
+                    六、《Go语言从入门到实践》徐波 学习笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="../go-xvbo/">
+            
+                <a href="../go-xvbo/">
+            
+                    
+                    Go语言从入门到实践-汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >2020-03-20-go学习笔记</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="&#x4ECA;&#x5929;&#x601D;&#x8003;&#x4E86;-&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x662F;&#x600E;&#x4E48;&#x88AB;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x3002;">&#x4ECA;&#x5929;&#x601D;&#x8003;&#x4E86; &#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x662F;&#x600E;&#x4E48;&#x88AB;&#x6784;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x3002;</h2>
+<p><a href="https://blog.csdn.net/paxhujing/article/details/52102237" target="_blank">&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x56FE;&#x5F62;&#x754C;&#x9762;&#x53D1;&#x5C55;&#x53F2;(1981-2009)<em>&#x8FD0;&#x7EF4;</em>&#x5C0F;&#x5E03;&#x4E01;&#x7684;&#x8BFB;&#x4E66;&#x7B14;&#x8BB0;-CSDN&#x535A;&#x5BA2;</a></p>
+<p><a href="https://www.cnblogs.com/LexMoon/p/antz09.html" target="_blank">&#x81EA;&#x5236;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;Antz(9)&#x2014;&#x2014;&#x5B9E;&#x73B0;&#x5185;&#x6838; (&#x4E0B;) &#x5B9E;&#x73B0;&#x56FE;&#x5F62;&#x5316;&#x754C;&#x9762; - AntzUhl - &#x535A;&#x5BA2;&#x56ED;</a></p>
+<p><a href="http://toastytech.com/guis/index.html" target="_blank">Graphical User Interface Gallery</a> GUI &#x7528;&#x6237;&#x754C;&#x9762;&#x7684; &#x641C;&#x96C6;&#x753B;&#x5ECA;&#x3002; </p>
+<p><a href="https://guidebookgallery.org/" target="_blank">GUIdebook: Graphical User Interface gallery</a> &#x56FE;&#x5F62;&#x7528;&#x6237;&#x754C;&#x9762;&#x9762;&#x8BBE;&#x8BA1;&#x7684;&#x53C2;&#x8003;&#x7F51;&#x7AD9;&#x3002;</p>
+<h2 id="&#x4ECA;&#x5929;&#x5199;&#x4E86;-jvm-&#x7684;-&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;&#x548C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6307;&#x4EE4;">&#x4ECA;&#x5929;&#x5199;&#x4E86; jvm &#x7684; &#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;&#x548C;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6307;&#x4EE4;</h2>
+<h5 id="topic&#xFF1A;&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;">Topic&#xFF1A;&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;</h5>
+<pre><code>&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;&#x53EA;&#x80FD;&#x64CD;&#x4F5C;int&#x548C;long&#x53D8;&#x91CF;&#xFF0C;
+&#x6309;&#x4F4D;&#x4E0E; and
+&#x6309;&#x4F4D;&#x6216; or
+&#x6309;&#x4F4D;&#x5F02;&#x6216; xor
+&#x5176;&#x5B9E;&#x771F;&#x6B63;&#x7684;&#x4F4D;&#x8FD0;&#x7B97;&#x5B9E;&#x73B0;&#x662F;go&#x8BED;&#x8A00;&#x7684;&#x8BED;&#x6CD5;&#x5B9E;&#x73B0;&#x7684;&#x3002;
+</code></pre><h5 id="topic&#xFF1A;-iinc&#x6307;&#x4EE4;">Topic&#xFF1A; iinc&#x6307;&#x4EE4;</h5>
+<p>&#x200B;    &#x521D;&#x770B;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x540D;&#x5B57;&#x5B8C;&#x5168;&#x4E0D;&#x77E5;&#x9053;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;</p>
+<pre><code>iinc&#x6307;&#x4EE4;&#x7ED9;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x8868;&#x4E2D;&#x7684;int&#x53D8;&#x91CF;&#x589E;&#x52A0;&#x5E38;&#x91CF;&#x503C;&#xFF0C;&#x5C40;&#x90E8;&#x53D8;&#x91CF;&#x8868;
+&#x7D22;&#x5F15;&#x548C;&#x5E38;&#x91CF;&#x503C;&#x90FD;&#x7531;&#x6307;&#x4EE4;&#x7684;&#x64CD;&#x4F5C;&#x6570;&#x63D0;&#x4F9B;&#x3002;
+</code></pre><h5 id="topic&#xFF1A;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6307;&#x4EE4;">Topic&#xFF1A;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x6307;&#x4EE4;</h5>
+<p>&#x200B;    &#x5728;&#x7C7B;&#x578B;&#x8F6C;&#x6362;&#x547D;&#x4EE4;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x8981;&#x660E;&#x767D;&#x7684;&#x662F;
+&#x200B;    java &#x548C; go &#x81EA;&#x8EAB;&#x7684; &#x57FA;&#x672C;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</p>
+<pre><code>&#x53E6;&#x5916; Stack&#x7684;pushXXX&#x65B9;&#x6CD5;&#x90FD;&#x662F;&#x9488;&#x5BF9;Java&#x7C7B;&#x578B;&#x7684;&#x3002;
+&#x8981;&#x7528;&#x6700;&#x7EC8;&#x8F6C;&#x6362;&#x7684;&#x7C7B;&#x578B;pushXXX
+</code></pre><h5 id="topic&#xFF1A;int-&#x8F6C;&#x6362;&#x6210;&#x5176;&#x4ED6;&#x7C7B;&#x578B;">Topic&#xFF1A;int &#x8F6C;&#x6362;&#x6210;&#x5176;&#x4ED6;&#x7C7B;&#x578B;</h5>
+<pre><code>java&#x91CC;&#x9762;&#x7684;int &#x53EF;&#x4EE5;&#x8F6C;&#x6362;&#x6210;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x7684;&#x57FA;&#x672C;&#x7C7B;&#x578B;&#xFF0C;&#x4F46;&#x662F; jvm&#x89C4;&#x8303;&#x7ED9;&#x51FA;&#x4E86;&#x4E00;&#x4E0B;&#x51E0;&#x79CD;&#xFF1A;
+    1. int &#x8F6C; short
+    2. int &#x8F6C; char
+    3. int &#x8F6C; long
+    4. int &#x8F6C; float
+    5. int &#x8F6C; double
+</code></pre><h5 id="topic&#xFF1A;double-&#x8F6C;&#x6362;&#x5230;&#x5176;&#x4ED6;&#x7C7B;&#x578B;">Topic&#xFF1A;double &#x8F6C;&#x6362;&#x5230;&#x5176;&#x4ED6;&#x7C7B;&#x578B;</h5>
+<pre><code>d2i d2f d2l
+
+double &#x8F6C;&#x6362;&#x5230;int float long
+
+&#x8FD9;&#x79CD;&#x8F6C;&#x6362;&#x5B9E;&#x9645;&#x7684;&#x5B8C;&#x6210;&#x65B9;&#x6CD5;&#x662F;&#x4F7F;&#x7528;Go&#x8BED;&#x8A00;&#x7684;&#x5F3A;&#x5236;&#x8F6C;&#x6362;&#x65B9;&#x6CD5;&#x3002;
+</code></pre><h5 id="topic&#xFF1A;long-&#x8F6C;&#x6362;&#x5230;&#x5176;&#x4ED6;&#x7C7B;&#x578B;">Topic&#xFF1A;long &#x8F6C;&#x6362;&#x5230;&#x5176;&#x4ED6;&#x7C7B;&#x578B;</h5>
+<pre><code>l2x.go
+
+&#x4E3B;&#x8981;&#x7684;&#x8F6C;&#x6362;&#x65B9;&#x5F0F;&#x5728;&#x4E8E; java&#x91CC;&#x9762;&#x7684; float &#x5728; go&#x91CC;&#x9762;&#x7684;&#x4E86;&#x7C7B;&#x578B;&#x6709;&#x90A3;&#x4E9B;
+Java &#x7684; long &#x5BF9;&#x5E94; go &#x7684; int64
+&#x4ECE; Stack &#x91CC;&#x9762;&#x8BFB;&#x53D6; long
+&#x8F6C;&#x6362;&#x6210;  float  double int
+
+&#x5982;&#x679C;&#x60F3;&#x8F6C;&#x6362;&#x6210;short &#x5BF9;&#x4E0D;&#x8D77;&#xFF0C; &#x6CA1;&#x6709;&#x8FD9;&#x4E2A;&#x6307;&#x4EE4; &#x7528;int &#x8F6C; short &#x4EE3;&#x66FF;
+</code></pre><h2 id="&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;-remgo">&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4; <code>rem.go</code></h2>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> math
+
+<span class="hljs-comment">/*
+&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;
+
+int &#x503C;&#x7684;&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;
+long &#x503C;&#x7684;&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;
+float &#x503C;&#x7684;&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;
+double &#x503C;&#x7684;&#x53D6;&#x4F59;&#x8FD0;&#x7B97;&#x6307;&#x4EE4;
+
+&#x7B49;&#x4E00;&#x4E0B; &#x7528;jvm&#x89C4;&#x8303;&#x7684;&#x601D;&#x60F3;&#x6765;&#x8BF4;
+short char &#x5C31;&#x6CA1;&#x6709;&#x53D6;&#x4F59;&#x7684;&#x6743;&#x5229;&#x4E86;&#xFF1F;
+
+*/</span>
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;math&quot;</span>
+
+    <span class="hljs-string">&quot;github.com/gova-jvm/instructions/base&quot;</span>
+    <span class="hljs-string">&quot;github.com/gova-jvm/rtda&quot;</span>
+)
+
+<span class="hljs-comment">// IREM</span>
+<span class="hljs-keyword">type</span> IREM <span class="hljs-keyword">struct</span>{ base.NoOperandsInstruction }
+
+<span class="hljs-keyword">func</span> (rem *IREM) Execute(frame *rtda.Frame) {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := staxk.PopInt()
+    <span class="hljs-keyword">if</span> v2 == <span class="hljs-number">0</span> {
+        <span class="hljs-built_in">panic</span>(<span class="hljs-string">&quot;java.lang.ArithmeticException: / by zero&quot;</span>)
+    }
+    result := v1 % v2
+    stack.PushInt(result)
+}
+
+<span class="hljs-comment">// LREM</span>
+<span class="hljs-keyword">type</span> LREM <span class="hljs-keyword">struct</span>{ base.NoOperandsInstruction }
+
+<span class="hljs-keyword">func</span> (rem *LREM) Execute(frame *rtda.Frame) {
+    stack := frame.OperandStack()
+    v2 := stack.PopLong()
+    v1 := staxk.PopLong()
+    <span class="hljs-keyword">if</span> v2 == <span class="hljs-number">0</span> {
+        <span class="hljs-built_in">panic</span>(<span class="hljs-string">&quot;java.lang.ArithmeticException: / by zero&quot;</span>)
+    }
+    result := v1 % v2
+    stack.PushLong(result)
+}
+
+<span class="hljs-comment">// FREM</span>
+<span class="hljs-keyword">type</span> FREM <span class="hljs-keyword">struct</span>{ base.NoOperandsInstruction }
+
+<span class="hljs-keyword">func</span> (rem *fREM) Execute(frame *rtda.Frame) {
+    stack := frame.OperandStack()
+    v2 := stack.PopFloat()
+    v1 := staxk.PopFloat()
+    result := math.Mod(v1, v2)
+    stack.PushFloat(result)
+}
+
+<span class="hljs-comment">// DREM</span>
+<span class="hljs-keyword">type</span> DREM <span class="hljs-keyword">struct</span>{ base.NoOperandsInstruction }
+
+<span class="hljs-keyword">func</span> (rem *DREM) Execute(frame *rtda.Frame) {
+    stack := frame.OperandStack()
+    v2 := stack.PopDouble()
+    v1 := staxk.PopDouble()
+    result := math.Mod(v1, v2)
+    stack.PushDouble(result)
+}
+</code></pre>
+<h2 id="&#x5E03;&#x5C14;&#x8FD0;&#x7B97;--&#x4E0E;--&#x6307;&#x4EE4;-andgo">&#x5E03;&#x5C14;&#x8FD0;&#x7B97;- &#x4E0E; -&#x6307;&#x4EE4; <code>and.go</code></h2>
+<pre><code class="lang-go">
+<span class="hljs-keyword">package</span> math
+
+<span class="hljs-comment">/*
+&#x5E03;&#x5C14;&#x8FD0;&#x7B97;&#x7684;&#x4E0E;&#x8FD0;&#x7B97;
+
+int &#x6309;&#x4F4D;&#x4E0E;
+
+long &#x6309;&#x4F4D;&#x4E0E;
+
+1. &#x53BB;&#x9664;&#x4E24;&#x4E2A;&#x503C;
+2. &#x7528;go&#x8BED;&#x8A00;&#x7684;&#x6309;&#x4F4D;&#x4E0E;&#x540E;
+3. &#x7ED3;&#x679C;&#x538B;&#x8FDB;&#x6808;&#x91CC;
+*/</span>
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;github.com/gova-jvm/instructions/base&quot;</span>
+    <span class="hljs-string">&quot;github.com/gova-jvm/rtda&quot;</span>
+)
+
+<span class="hljs-comment">// Boolean AND int</span>
+<span class="hljs-keyword">type</span> IAND <span class="hljs-keyword">struct</span>{ base.NoOperandsIstruction }
+
+<span class="hljs-keyword">func</span> (and *IAND) Execute(frame *rtda.Frame) {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopInt()
+    result := v1 &amp; v2
+    stack.PushInt(result)
+}
+
+<span class="hljs-comment">// Boolean AND long</span>
+<span class="hljs-keyword">type</span> LAND <span class="hljs-keyword">struct</span>{ base.NoOperandsIstruction }
+
+<span class="hljs-keyword">func</span> (and *LAND) Execute(frame *rtda.Frame) {
+    stack := frame.OperandStack()
+    v2 := stack.PopLong()
+    v1 := stack.PopLong()
+    result := v1 &amp; v2
+    stack.PushLong(result)
+}
+</code></pre>
+<h2 id="&#x79FB;&#x4F4D;&#x6307;&#x4EE4;-shgo">&#x79FB;&#x4F4D;&#x6307;&#x4EE4; <code>sh.go</code></h2>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> math
+<span class="hljs-comment">/*
+&#x4F4D;&#x79FB;&#x6307;&#x4EE4;
+1. int &#x5DE6;&#x79FB;
+2. int &#x53F3;&#x79FB;
+3. int &#x903B;&#x8F91;&#x53F3;&#x79FB;
+4. long &#x5DE6;&#x79FB;
+5. long &#x53F3;&#x79FB;
+6. long &#x903B;&#x8F91;&#x53F3;&#x79FB;
+
+&#x6211;&#x6CA1;&#x660E;&#x767D;&#x903B;&#x8F91;&#x53F3;&#x79FB;
+&#x6211;&#x4E5F;&#x6CA1;&#x660E;&#x767D; Pop&#x51FA;&#x6765;&#x7684;&#x6570;&#x503C;&#x7C7B;&#x578B;&#x4E0D;&#x540C;&#x3002;
+s &#x7684; &#x8BA1;&#x7B97;&#x65B9;&#x5F0F;&#x4E5F;&#x4E0D;&#x540C;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x3002;
+*/</span>
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;math&quot;</span>
+
+    <span class="hljs-string">&quot;github.com/gova-jvm/instructions/base&quot;</span>
+    <span class="hljs-string">&quot;github.com/gova-jvm/rtda&quot;</span>
+)
+
+<span class="hljs-comment">// int left move</span>
+<span class="hljs-keyword">type</span> ISHL sturct{ base.NoOperandsInstruction } 
+
+<span class="hljs-keyword">func</span> (sh *ISHL) Execute(frame *rtda.Frame)  {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopInt()
+    s := <span class="hljs-keyword">uint32</span>(v2) &amp; <span class="hljs-number">0x1f</span>
+    result := v1 &lt;&lt; s
+    stack.PushInt(reslut)
+}
+
+<span class="hljs-comment">// int right move</span>
+<span class="hljs-keyword">type</span> ISHR sturct{ base.NoOperandsInstruction } 
+
+<span class="hljs-keyword">func</span> (sh *ISHR) Execute(frame *rtda.Frame)  {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopInt()
+    s := <span class="hljs-keyword">uint32</span>(v2) &amp; <span class="hljs-number">0x1f</span>
+    result := v1 &gt;&gt; s
+    stack.PushInt(reslut)
+}
+
+<span class="hljs-comment">// int logic right move</span>
+<span class="hljs-keyword">type</span> IUSHR sturct{ base.NoOperandsInstruction } 
+
+<span class="hljs-keyword">func</span> (sh *LSHR) Execute(frame *rtda.Frame)  {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopLong()
+    s := <span class="hljs-keyword">uint32</span>(v2) &amp; <span class="hljs-number">0x3f</span>
+    result := v1 &lt;&lt; s
+    stack.PushLang(reslut)
+}
+
+<span class="hljs-comment">// long left move</span>
+<span class="hljs-keyword">type</span> LSHL sturct{ base.NoOperandsInstruction } 
+
+<span class="hljs-keyword">func</span> (sh *IUSHR) Execute(frame *rtda.Frame)  {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopInt()
+    s := <span class="hljs-keyword">uint32</span>(v2) &amp; <span class="hljs-number">0x1f</span> 
+    result := <span class="hljs-keyword">int32</span>(<span class="hljs-keyword">uint32</span>(v1) &gt;&gt; s)
+    stack.PushInt(result)
+}
+
+<span class="hljs-comment">// long right move</span>
+<span class="hljs-keyword">type</span> LSHR sturct{ base.NoOperandsInstruction } 
+
+<span class="hljs-keyword">func</span> (sh *LSHR) Execute(frame *rtda.Frame)  {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopLong()
+    s := <span class="hljs-keyword">uint32</span>(v2) &amp; <span class="hljs-number">0x3f</span>
+    result := v1 &gt;&gt; s
+    stack.PushInt(reslut)
+}
+
+<span class="hljs-comment">// long logic right move</span>
+<span class="hljs-keyword">type</span> LUSHR sturct{ base.NoOperandsInstruction } 
+
+<span class="hljs-keyword">func</span> (sh *LUSHR) Execute(frame *rtda.Frame)  {
+    stack := frame.OperandStack()
+    v2 := stack.PopInt()
+    v1 := stack.PopLong()
+    s := <span class="hljs-keyword">uint32</span>(v2) &amp; <span class="hljs-number">0x3f</span>
+    result := <span class="hljs-keyword">int64</span>( <span class="hljs-keyword">uint64</span>(v1) &gt;&gt; s)
+    stack.PushLang(reslut)
+}
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Go语言学习笔记-汇总">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"2020-03-20-go学习笔记","level":"1.1.1","depth":2,"next":{"title":"一、Go语言基础","level":"1.2","depth":1,"ref":"","articles":[]},"previous":{"title":"Go语言学习笔记-汇总","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"2020-03-20-go学习笔记","level":"1.1.1","depth":2,"path":"source00/2020-03-20-go学习笔记.md","ref":"./source00/2020-03-20-go学习笔记.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"source00/2020-03-20-go学习笔记.md","mtime":"2020-03-20T17:37:08.327Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-20T17:37:50.377Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
