@@ -1,0 +1,884 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day01-基本类型 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2020-02-14-Go语言学习Day02-学习日志.html" />
+    
+    
+    <link rel="prev" href="2020-02-16-Go工具链汇总.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言学习笔记-汇总
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="2020-03-20-go学习笔记.md">
+            
+                <span>
+            
+                    
+                    2020-03-20-go学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    一、Go语言基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    二、Go语言标准库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    三、Go语言第三方库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    四、Go语言项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    五、尚硅谷Go语言学习笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ShangGuiGu-HanShunPing-goHeXinBianCheng/">
+            
+                <a href="../ShangGuiGu-HanShunPing-goHeXinBianCheng/">
+            
+                    
+                    课程目录【尚硅谷】新版 GO语言+区块链就业班 全套（600p完结）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    六、《Go语言从入门到实践》徐波 学习笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../go-xvbo/">
+            
+                <a href="../go-xvbo/">
+            
+                    
+                    Go语言从入门到实践-汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../go-xvbo/9-1.html">
+            
+                <a href="../go-xvbo/9-1.html">
+            
+                    
+                    9.1 轻量级线程（goroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    七、Go语言学习日记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="2020-02-15-千锋教育-Go语言培训课表内容.html">
+            
+                <a href="2020-02-15-千锋教育-Go语言培训课表内容.html">
+            
+                    
+                    Go语言培训课表内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="2020-02-15-千锋教育-全部资源网盘疫情时期公开.html">
+            
+                <a href="2020-02-15-千锋教育-全部资源网盘疫情时期公开.html">
+            
+                    
+                    千锋教育-全部资源网盘疫情时期公开
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="2020-01-13-Go语言学习-Day00.html">
+            
+                <a href="2020-01-13-Go语言学习-Day00.html">
+            
+                    
+                    Day00-初识和计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="2020-02-16-Go工具链汇总.html">
+            
+                <a href="2020-02-16-Go工具链汇总.html">
+            
+                    
+                    Go工具链汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.5" data-path="2020-02-13-Go语言学习Day01-基本类型.html">
+            
+                <a href="2020-02-13-Go语言学习Day01-基本类型.html">
+            
+                    
+                    Day01-基本类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="2020-02-14-Go语言学习Day02-学习日志.html">
+            
+                <a href="2020-02-14-Go语言学习Day02-学习日志.html">
+            
+                    
+                    Day02-学习日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="2020-02-15-Go语言学习Day03-学习日志.html">
+            
+                <a href="2020-02-15-Go语言学习Day03-学习日志.html">
+            
+                    
+                    Day03-学习日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.8" data-path="2020-02-16-Go语言学习Day04-Gin框架入门.html">
+            
+                <a href="2020-02-16-Go语言学习Day04-Gin框架入门.html">
+            
+                    
+                    Day04-Gin框架入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="2020-02-16-Go语言学习Day04-notebook数据库建库.html">
+            
+                <a href="2020-02-16-Go语言学习Day04-notebook数据库建库.html">
+            
+                    
+                    Day04-notebook数据库建库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="2020-02-17-Go语言学习Day05-完整博客项目代码模仿和MySQL知识学习.html">
+            
+                <a href="2020-02-17-Go语言学习Day05-完整博客项目代码模仿和MySQL知识学习.html">
+            
+                    
+                    Day05-完整博客项目代码模仿和MySQL知识学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="2020-03-20-Go语言学习Day06-操作系统和jvm.html">
+            
+                <a href="2020-03-20-Go语言学习Day06-操作系统和jvm.html">
+            
+                    
+                    Day06-操作系统和jvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="2020-03-25-Go语言学习笔记Day07-微服务、ProtoBuf和RPC.html">
+            
+                <a href="2020-03-25-Go语言学习笔记Day07-微服务、ProtoBuf和RPC.html">
+            
+                    
+                    Day07-微服务、ProtoBuf和RPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day01-基本类型</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="2020&#x5E74;02&#x6708;13&#x65E5;-go&#x8BED;&#x8A00;&#x5B66;&#x4E60;day01-&#x5B66;&#x4E60;&#x65E5;&#x5FD7;">2020&#x5E74;02&#x6708;13&#x65E5;-Go&#x8BED;&#x8A00;&#x5B66;&#x4E60;Day01-&#x5B66;&#x4E60;&#x65E5;&#x5FD7;</h1>
+<p><img src="https://user-gold-cdn.xitu.io/2020/2/12/17038ee101bad6ec?w=320&amp;h=202&amp;f=jpeg&amp;s=17370" alt="footer-gopher.jpg (https://tva1.sinaimg.cn/large/0082zybpgy1gbuts7v3rkj308w05mweo.jpg)"></p>
+<h2 id="go&#x8BED;&#x8A00;&#x6838;&#x5FC3;&#x7F16;&#x7A0B;&#x8D44;&#x6599;&#x6587;&#x4EF6;&#x5939;">Go&#x8BED;&#x8A00;&#x6838;&#x5FC3;&#x7F16;&#x7A0B;&#x8D44;&#x6599;&#x6587;&#x4EF6;&#x5939;</h2>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gbuts8lwpyj303608umym.jpg" alt="&#x6838;&#x5FC3;&#x7F16;&#x7A0B;&#x8D44;&#x6599;&#x6587;&#x4EF6;&#x5939;"></p>
+<ul>
+<li>&#x7B14;&#x8BB0;&#xFF1A; </li>
+<li>&#x4EE3;&#x7801;&#xFF1A; </li>
+<li>&#x53EF;&#x89C1;&#xFF1A; </li>
+<li>&#x8F6F;&#x4EF6;&#xFF1A; </li>
+<li>&#x89C6;&#x9891;&#xFF1A; </li>
+<li>&#x8D44;&#x6599;&#xFF1A; </li>
+<li>&#x4F5C;&#x4E1A;&#xFF1A; </li>
+</ul>
+<h3 id="1&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E92;&#x76F8;&#x8F6C;&#x6362;">1.&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E92;&#x76F8;&#x8F6C;&#x6362;</h3>
+<p><code>T(value)</code></p>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> a <span class="hljs-keyword">int</span> = <span class="hljs-number">10</span>
+<span class="hljs-keyword">var</span> b float = float(a)
+<span class="hljs-keyword">var</span> c <span class="hljs-keyword">int64</span> = <span class="hljs-keyword">int64</span>(a)
+</code></pre>
+<h3 id="2-&#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;">2. &#x5B57;&#x7B26;&#x4E32;&#x8FDE;&#x63A5;</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">var</span> str <span class="hljs-keyword">string</span> = <span class="hljs-string">&quot;hello&quot;</span> + <span class="hljs-string">&quot;world&quot;</span>
+</code></pre>
+<h3 id="3-for-&#x5FAA;&#x73AF;&#x6709;&#x4E09;&#x79CD;&#x5F62;&#x5F0F;-&#xFF08;for-range&#x5FAA;&#x73AF;&#x540E;&#x9762;&#x8BA8;&#x8BBA;&#xFF09;">3. for &#x5FAA;&#x73AF;&#x6709;&#x4E09;&#x79CD;&#x5F62;&#x5F0F; &#xFF08;for-range&#x5FAA;&#x73AF;&#x540E;&#x9762;&#x8BA8;&#x8BBA;&#xFF09;</h3>
+<p><strong>&#x7B2C;&#x4E00;&#x79CD;&#xFF1A;</strong></p>
+<p>&#x5B8C;&#x6574;&#x7248;for&#x5FAA;&#x73AF;&#xFF1A;<code>for &#x5FAA;&#x73AF;&#x53D8;&#x91CF;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x5FAA;&#x73AF;&#x6761;&#x4EF6;&#xFF0C;&#x5FAA;&#x73AF;&#x53D8;&#x91CF;&#x8FED;&#x4EE3; { }</code></p>
+<pre><code class="lang-go"><span class="hljs-keyword">for</span> <span class="hljs-keyword">var</span> i <span class="hljs-keyword">int</span> = <span class="hljs-number">0</span> &#xFF1B; i &lt;= <span class="hljs-number">10</span> ; i++ {
+    fmt.Println(<span class="hljs-string">&quot;Hello World!&quot;</span>)
+}
+</code></pre>
+<p><strong>&#x7B2C;&#x4E8C;&#x79CD;&#xFF1A;</strong></p>
+<p>&#x4F18;&#x5316;&#x7248;for&#x5FAA;&#x73AF;&#xFF1A; <code>for &#x5FAA;&#x73AF;&#x6761;&#x4EF6; { }</code></p>
+<pre><code class="lang-go">i := <span class="hljs-number">10</span>
+<span class="hljs-keyword">for</span> i &lt;= <span class="hljs-number">100</span> {
+  fmt.Println(<span class="hljs-string">&quot;Hello World!&quot;</span>)
+  i++
+}
+</code></pre>
+<p><strong>&#x7B2C;&#x4E09;&#x79CD;&#x5FAA;&#x73AF;&#xFF1A;</strong></p>
+<p>&#x6B7B;&#x5FAA;&#x73AF;&#x7248;for&#x5FAA;&#x73AF;&#xFF1A; <code>for { }</code> or <code>for ;; {}</code></p>
+<p>&#x8FD9;&#x79CD;&#x6B7B;&#x5FAA;&#x73AF;&#x901A;&#x5E38;&#x914D;&#x5408; <code>break</code> &#x8BED;&#x53E5;&#x4F7F;&#x7528;&#x3002;</p>
+<h3 id="4-&#x81EA;&#x589E;&#x3001;&#x81EA;&#x51CF;&#x53EA;&#x80FD;&#x5355;&#x72EC;&#x4F7F;&#x7528;&#x4E14;&#x52A0;&#x53F7;&#x51CF;&#x53F7;&#x90FD;&#x53EA;&#x80FD;&#x5728;&#x540E;&#x9762;">4. &#x81EA;&#x589E;&#x3001;&#x81EA;&#x51CF;&#x53EA;&#x80FD;&#x5355;&#x72EC;&#x4F7F;&#x7528;&#x4E14;&#x52A0;&#x53F7;&#x51CF;&#x53F7;&#x90FD;&#x53EA;&#x80FD;&#x5728;&#x540E;&#x9762;</h3>
+<pre><code class="lang-go">i++ <span class="hljs-comment">// right</span>
+i-- <span class="hljs-comment">// right</span>
+
+--i <span class="hljs-comment">// false</span>
+++i <span class="hljs-comment">// false</span>
+
+<span class="hljs-comment">//right</span>
+<span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span> ; i &lt; <span class="hljs-number">10</span> ; i++ {
+
+}
+
+
+<span class="hljs-comment">//false ,&#x81EA;&#x589E;&#x81EA;&#x51CF;&#x53EA;&#x80FD;&#x4F5C;&#x4E3A;&#x5355;&#x72EC;&#x7684;&#x8BED;&#x53E5;&#x4F7F;&#x7528;&#x3002;</span>
+<span class="hljs-keyword">if</span> i++ {
+
+}
+</code></pre>
+<h2 id="&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x6570;&#x636E;&#x7C7B;&#x578B;">&#x7B2C;&#x4E8C;&#x7AE0;&#xFF1A;&#x6570;&#x636E;&#x7C7B;&#x578B;</h2>
+<p>&#x672C;&#x7AE0;&#x4E3B;&#x8981;&#x5185;&#x5BB9;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li><a href="https://golang.google.cn/ref/spec#Method_sets" target="_blank">Method sets</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Boolean_types" target="_blank">Boolean types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Numeric_types" target="_blank">Numeric types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#String_types" target="_blank">String types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Array_types" target="_blank">Array types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Slice_types" target="_blank">Slice types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Struct_types" target="_blank">Struct types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Pointer_types" target="_blank">Pointer types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Function_types" target="_blank">Function types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Interface_types" target="_blank">Interface types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Map_types" target="_blank">Map types</a></li>
+<li><a href="https://golang.google.cn/ref/spec#Channel_types" target="_blank">Channel types</a></li>
+</ul>
+<h3 id="21-&#x65B9;&#x6CD5;&#x96C6;">2.1 &#x65B9;&#x6CD5;&#x96C6;</h3>
+<p>A type may have a <em>method set</em> associated with it. The method set of an <a href="https://golang.google.cn/ref/spec#Interface_types" target="_blank">interface type</a> is its interface. The method set of any other type <code>T</code> consists of all <a href="https://golang.google.cn/ref/spec#Method_declarations" target="_blank">methods</a> declared with receiver type <code>T</code>. The method set of the corresponding <a href="https://golang.google.cn/ref/spec#Pointer_types" target="_blank">pointer type</a> <code>*T</code> is the set of all methods declared with receiver <code>*T</code> or <code>T</code> (that is, it also contains the method set of <code>T</code>). Further rules apply to structs containing embedded fields, as described in the section on <a href="https://golang.google.cn/ref/spec#Struct_types" target="_blank">struct types</a>. Any other type has an empty method set. In a method set, each method must have a <a href="https://golang.google.cn/ref/spec#Uniqueness_of_identifiers" target="_blank">unique</a> non-<a href="https://golang.google.cn/ref/spec#Blank_identifier" target="_blank">blank</a> <a href="https://golang.google.cn/ref/spec#MethodName" target="_blank">method name</a>.</p>
+<p>The method set of a type determines the interfaces that the type <a href="https://golang.google.cn/ref/spec#Interface_types" target="_blank">implements</a> and the methods that can be <a href="https://golang.google.cn/ref/spec#Calls" target="_blank">called</a> using a receiver of that type.</p>
+<h3 id="22-&#x5E03;&#x5C14;&#x7C7B;&#x578B;---&#x6570;&#x636E;&#x7C7B;&#x578B;">2.2 &#x5E03;&#x5C14;&#x7C7B;&#x578B; - &#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A <em>boolean type</em> represents the set of Boolean truth values denoted by the predeclared constants <code>true</code> and <code>false</code>. The predeclared boolean type is <code>bool</code>; it is a <a href="https://golang.google.cn/ref/spec#Type_definitions" target="_blank">defined type</a>.</p>
+<h3 id="23-&#x6570;&#x503C;&#x578B;&#xFF08;-numeric-types&#xFF09;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.3. &#x6570;&#x503C;&#x578B;&#xFF08; Numeric Types&#xFF09;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p><strong><a href="https://golang.google.cn/ref/spec#Numeric_types" target="_blank">The Go Programming Language -Numeric_types</a></strong></p>
+<pre><code class="lang-go"><span class="hljs-comment">// A numeric type represents sets of integer or floating-point values. </span>
+<span class="hljs-comment">// The predeclared architecture-independent numeric types are:</span>
+
+<span class="hljs-keyword">uint8</span>       the set of all unsigned  <span class="hljs-number">8</span>-bit integers (<span class="hljs-number">0</span> to <span class="hljs-number">255</span>)
+<span class="hljs-keyword">uint16</span>      the set of all unsigned <span class="hljs-number">16</span>-bit integers (<span class="hljs-number">0</span> to <span class="hljs-number">65535</span>)
+<span class="hljs-keyword">uint32</span>      the set of all unsigned <span class="hljs-number">32</span>-bit integers (<span class="hljs-number">0</span> to <span class="hljs-number">4294967295</span>)
+<span class="hljs-keyword">uint64</span>      the set of all unsigned <span class="hljs-number">64</span>-bit integers (<span class="hljs-number">0</span> to <span class="hljs-number">18446744073709551615</span>)
+
+<span class="hljs-keyword">int8</span>        the set of all signed  <span class="hljs-number">8</span>-bit integers (<span class="hljs-number">-128</span> to <span class="hljs-number">127</span>)
+<span class="hljs-keyword">int16</span>       the set of all signed <span class="hljs-number">16</span>-bit integers (<span class="hljs-number">-32768</span> to <span class="hljs-number">32767</span>)
+<span class="hljs-keyword">int32</span>       the set of all signed <span class="hljs-number">32</span>-bit integers (<span class="hljs-number">-2147483648</span> to <span class="hljs-number">2147483647</span>)
+<span class="hljs-keyword">int64</span>       the set of all signed <span class="hljs-number">64</span>-bit integers (<span class="hljs-number">-9223372036854775808</span> to <span class="hljs-number">9223372036854775807</span>)
+
+<span class="hljs-keyword">float32</span>     the set of all IEEE<span class="hljs-number">-754</span> <span class="hljs-number">32</span>-bit floating-point numbers
+<span class="hljs-keyword">float64</span>     the set of all IEEE<span class="hljs-number">-754</span> <span class="hljs-number">64</span>-bit floating-point numbers
+
+<span class="hljs-keyword">complex64</span>   the set of all <span class="hljs-built_in">complex</span> numbers with <span class="hljs-keyword">float32</span> <span class="hljs-built_in">real</span> and imaginary parts
+<span class="hljs-keyword">complex128</span>  the set of all <span class="hljs-built_in">complex</span> numbers with <span class="hljs-keyword">float64</span> <span class="hljs-built_in">real</span> and imaginary parts
+
+<span class="hljs-keyword">byte</span>        alias <span class="hljs-keyword">for</span> <span class="hljs-keyword">uint8</span>
+<span class="hljs-keyword">rune</span>        alias <span class="hljs-keyword">for</span> <span class="hljs-keyword">int32</span>
+<span class="hljs-comment">//The value of an n-bit integer is n bits wide and represented using two&apos;s complement arithmetic.</span>
+
+<span class="hljs-comment">//There is also a set of predeclared numeric types with implementation-specific sizes:</span>
+
+<span class="hljs-keyword">uint</span>     either <span class="hljs-number">32</span> or <span class="hljs-number">64</span> bits
+<span class="hljs-keyword">int</span>      same size as <span class="hljs-keyword">uint</span>
+<span class="hljs-keyword">uintptr</span>  an unsigned integer large enough to store the uninterpreted bits of a pointer value
+<span class="hljs-comment">//To avoid portability issues all numeric types are defined types and thus distinct except byte, which is an alias for uint8, and rune, which is an alias for int32. Explicit conversions are required when different numeric types are mixed in an expression or assignment. For instance, int32 and int are not the same type even though they may have the same size on a particular architecture.</span>
+</code></pre>
+<h3 id="24-&#x5B57;&#x7B26;&#x578B;&#xFF08;string-types&#xFF09;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.4. &#x5B57;&#x7B26;&#x578B;&#xFF08;String Types&#xFF09;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A <em>string type</em> represents the set of string values. A string value is a (possibly empty) sequence of bytes. The number of bytes is called the length of the string and is never negative. Strings are immutable: once created, it is impossible to change the contents of a string. The predeclared string type is <code>string</code>; it is a <a href="https://golang.google.cn/ref/spec#Type_definitions" target="_blank">defined type</a>.</p>
+<p>The length of a string <code>s</code> can be discovered using the built-in function <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>len</code></a>. The length is a compile-time constant if the string is a constant. A string&apos;s bytes can be accessed by integer <a href="https://golang.google.cn/ref/spec#Index_expressions" target="_blank">indices</a> 0 through <code>len(s)-1</code>. It is illegal to take the address of such an element; if <code>s[i]</code> is the <code>i</code>&apos;th byte of a string, <code>&amp;s[i]</code> is invalid.</p>
+<h3 id="25-&#x6570;&#x7EC4;&#xFF08;array-types&#xFF09;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.5. &#x6570;&#x7EC4;&#xFF08;Array Types&#xFF09;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>An array is a numbered sequence of elements of a single type, called the element type. The number of elements is called the length of the array and is never negative.</p>
+<pre><code class="lang-go">ArrayType   = <span class="hljs-string">&quot;[&quot;</span> ArrayLength <span class="hljs-string">&quot;]&quot;</span> ElementType .
+ArrayLength = Expression .
+ElementType = Type .
+</code></pre>
+<p>The length is part of the array&apos;s type; it must evaluate to a non-negative <a href="https://golang.google.cn/ref/spec#Constants" target="_blank">constant</a> <a href="https://golang.google.cn/ref/spec#Representability" target="_blank">representable</a> by a value of type <code>int</code>. The length of array <code>a</code> can be discovered using the built-in function <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>len</code></a>. The elements can be addressed by integer <a href="https://golang.google.cn/ref/spec#Index_expressions" target="_blank">indices</a> 0 through <code>len(a)-1</code>. Array types are always one-dimensional but may be composed to form multi-dimensional types.</p>
+<pre><code class="lang-go">[<span class="hljs-number">32</span>]<span class="hljs-keyword">byte</span>
+[<span class="hljs-number">2</span>*N] <span class="hljs-keyword">struct</span> { x, y <span class="hljs-keyword">int32</span> }
+[<span class="hljs-number">1000</span>]*<span class="hljs-keyword">float64</span>
+[<span class="hljs-number">3</span>][<span class="hljs-number">5</span>]<span class="hljs-keyword">int</span>
+[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>][<span class="hljs-number">2</span>]<span class="hljs-keyword">float64</span>  <span class="hljs-comment">// same as [2]([2]([2]float64))</span>
+</code></pre>
+<h3 id="26-&#x5207;&#x7247;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.6. &#x5207;&#x7247;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A slice is a descriptor for a contiguous segment of an <em>underlying array</em> and provides access to a numbered sequence of elements from that array. A slice type denotes the set of all slices of arrays of its element type. The number of elements is called the length of the slice and is never negative. The value of an uninitialized slice is <code>nil</code>.</p>
+<pre><code class="lang-go">SliceType = <span class="hljs-string">&quot;[&quot;</span> <span class="hljs-string">&quot;]&quot;</span> ElementType .
+</code></pre>
+<p>The length of a slice <code>s</code> can be discovered by the built-in function <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>len</code></a>; unlike with arrays it may change during execution. The elements can be addressed by integer <a href="https://golang.google.cn/ref/spec#Index_expressions" target="_blank">indices</a> 0 through <code>len(s)-1</code>. The slice index of a given element may be less than the index of the same element in the underlying array.</p>
+<p>A slice, once initialized, is always associated with an underlying array that holds its elements. A slice therefore shares storage with its array and with other slices of the same array; by contrast, distinct arrays always represent distinct storage.</p>
+<p>The array underlying a slice may extend past the end of the slice. The <em>capacity</em> is a measure of that extent: it is the sum of the length of the slice and the length of the array beyond the slice; a slice of length up to that capacity can be created by <a href="https://golang.google.cn/ref/spec#Slice_expressions" target="_blank"><em>slicing</em></a> a new one from the original slice. The capacity of a slice <code>a</code> can be discovered using the built-in function <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>cap(a)</code></a>.</p>
+<p>A new, initialized slice value for a given element type <code>T</code> is made using the built-in function <a href="https://golang.google.cn/ref/spec#Making_slices_maps_and_channels" target="_blank"><code>make</code></a>, which takes a slice type and parameters specifying the length and optionally the capacity. A slice created with <code>make</code> always allocates a new, hidden array to which the returned slice value refers. That is, executing</p>
+<pre><code class="lang-go"><span class="hljs-built_in">make</span>([]T, length, capacity)
+</code></pre>
+<p>produces the same slice as allocating an array and <a href="https://golang.google.cn/ref/spec#Slice_expressions" target="_blank">slicing</a> it, so these two expressions are equivalent:</p>
+<pre><code class="lang-go"><span class="hljs-built_in">make</span>([]<span class="hljs-keyword">int</span>, <span class="hljs-number">50</span>, <span class="hljs-number">100</span>)
+<span class="hljs-built_in">new</span>([<span class="hljs-number">100</span>]<span class="hljs-keyword">int</span>)[<span class="hljs-number">0</span>:<span class="hljs-number">50</span>]
+</code></pre>
+<p>Like arrays, slices are always one-dimensional but may be composed to construct higher-dimensional objects. With arrays of arrays, the inner arrays are, by construction, always the same length; however with slices of slices (or arrays of slices), the inner lengths may vary dynamically. Moreover, the inner slices must be initialized individually.</p>
+<h3 id="27&#x7ED3;&#x6784;&#x4F53;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.7.&#x7ED3;&#x6784;&#x4F53;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A struct is a sequence of named elements, called fields, each of which has a name and a type. Field names may be specified explicitly (IdentifierList) or implicitly (EmbeddedField). Within a struct, non-<a href="https://golang.google.cn/ref/spec#Blank_identifier" target="_blank">blank</a> field names must be <a href="https://golang.google.cn/ref/spec#Uniqueness_of_identifiers" target="_blank">unique</a>.</p>
+<pre><code class="lang-go">StructType    = <span class="hljs-string">&quot;struct&quot;</span> <span class="hljs-string">&quot;{&quot;</span> { FieldDecl <span class="hljs-string">&quot;;&quot;</span> } <span class="hljs-string">&quot;}&quot;</span> .
+FieldDecl     = (IdentifierList Type | EmbeddedField) [ Tag ] .
+EmbeddedField = [ <span class="hljs-string">&quot;*&quot;</span> ] TypeName .
+Tag           = string_lit .
+<span class="hljs-comment">// An empty struct.</span>
+<span class="hljs-keyword">struct</span> {}
+
+<span class="hljs-comment">// A struct with 6 fields.</span>
+<span class="hljs-keyword">struct</span> {
+ x, y <span class="hljs-keyword">int</span>
+ u <span class="hljs-keyword">float32</span>
+ _ <span class="hljs-keyword">float32</span>  <span class="hljs-comment">// padding</span>
+ A *[]<span class="hljs-keyword">int</span>
+ F <span class="hljs-keyword">func</span>()
+}
+</code></pre>
+<p>A field declared with a type but no explicit field name is called an <em>embedded field</em>. An embedded field must be specified as a type name <code>T</code> or as a pointer to a non-interface type name <code>*T</code>, and <code>T</code> itself may not be a pointer type. The unqualified type name acts as the field name.</p>
+<pre><code class="lang-go"><span class="hljs-comment">// A struct with four embedded fields of types T1, *T2, P.T3 and *P.T4</span>
+<span class="hljs-keyword">struct</span> {
+    T1        <span class="hljs-comment">// field name is T1</span>
+    *T2       <span class="hljs-comment">// field name is T2</span>
+    P.T3      <span class="hljs-comment">// field name is T3</span>
+    *P.T4     <span class="hljs-comment">// field name is T4</span>
+    x, y <span class="hljs-keyword">int</span>  <span class="hljs-comment">// field names are x and y</span>
+}
+</code></pre>
+<p>The following declaration is illegal because field names must be unique in a struct type:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">struct</span> {
+    T     <span class="hljs-comment">// conflicts with embedded field *T and *P.T</span>
+    *T    <span class="hljs-comment">// conflicts with embedded field T and *P.T</span>
+    *P.T  <span class="hljs-comment">// conflicts with embedded field T and *T</span>
+}
+</code></pre>
+<p>A field or <a href="https://golang.google.cn/ref/spec#Method_declarations" target="_blank">method</a> <code>f</code> of an embedded field in a struct <code>x</code> is called <em>promoted</em> if <code>x.f</code> is a legal <a href="https://golang.google.cn/ref/spec#Selectors" target="_blank">selector</a> that denotes that field or method <code>f</code>.</p>
+<p>Promoted fields act like ordinary fields of a struct except that they cannot be used as field names in <a href="https://golang.google.cn/ref/spec#Composite_literals" target="_blank">composite literals</a> of the struct.</p>
+<p>Given a struct type <code>S</code> and a <a href="https://golang.google.cn/ref/spec#Type_definitions" target="_blank">defined type</a> <code>T</code>, promoted methods are included in the method set of the struct as follows:</p>
+<ul>
+<li>If <code>S</code> contains an embedded field <code>T</code>, the <a href="https://golang.google.cn/ref/spec#Method_sets" target="_blank">method sets</a> of <code>S</code> and <code>*S</code> both include promoted methods with receiver <code>T</code>. The method set of <code>*S</code> also includes promoted methods with receiver <code>*T</code>.</li>
+<li>If <code>S</code> contains an embedded field <code>*T</code>, the method sets of <code>S</code> and <code>*S</code> both include promoted methods with receiver <code>T</code> or <code>*T</code>.</li>
+</ul>
+<p>A field declaration may be followed by an optional string literal <em>tag</em>, which becomes an attribute for all the fields in the corresponding field declaration. An empty tag string is equivalent to an absent tag. The tags are made visible through a <a href="https://golang.google.cn/pkg/reflect/#StructTag" target="_blank">reflection interface</a> and take part in <a href="https://golang.google.cn/ref/spec#Type_identity" target="_blank">type identity</a> for structs but are otherwise ignored.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">struct</span> {
+    x, y <span class="hljs-keyword">float64</span> <span class="hljs-string">&quot;&quot;</span>  <span class="hljs-comment">// an empty tag string is like an absent tag</span>
+    name <span class="hljs-keyword">string</span>  <span class="hljs-string">&quot;any string is permitted as a tag&quot;</span>
+    _    [<span class="hljs-number">4</span>]<span class="hljs-keyword">byte</span> <span class="hljs-string">&quot;ceci n&apos;est pas un champ de structure&quot;</span>
+}
+
+<span class="hljs-comment">// A struct corresponding to a TimeStamp protocol buffer.</span>
+<span class="hljs-comment">// The tag strings define the protocol buffer field numbers;</span>
+<span class="hljs-comment">// they follow the convention outlined by the reflect package.</span>
+<span class="hljs-keyword">struct</span> {
+    microsec  <span class="hljs-keyword">uint64</span> <span class="hljs-string">`protobuf:&quot;1&quot;`</span>
+    serverIP6 <span class="hljs-keyword">uint64</span> <span class="hljs-string">`protobuf:&quot;2&quot;`</span>
+}
+</code></pre>
+<h3 id="28&#x6307;&#x9488;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.8.&#x6307;&#x9488;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A pointer type denotes the set of all pointers to <a href="https://golang.google.cn/ref/spec#Variables" target="_blank">variables</a> of a given type, called the <em>base type</em> of the pointer. The value of an uninitialized pointer is <code>nil</code>.</p>
+<pre><code class="lang-go">PointerType = <span class="hljs-string">&quot;*&quot;</span> BaseType .
+BaseType    = Type .
+*Point
+*[<span class="hljs-number">4</span>]<span class="hljs-keyword">int</span>
+</code></pre>
+<h3 id="29&#x51FD;&#x6570;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.9.&#x51FD;&#x6570;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A function type denotes the set of all functions with the same parameter and result types. The value of an uninitialized variable of function type is <code>nil</code>.</p>
+<pre><code>FunctionType   = &quot;func&quot; Signature .
+Signature      = Parameters [ Result ] .
+Result         = Parameters | Type .
+Parameters     = &quot;(&quot; [ ParameterList [ &quot;,&quot; ] ] &quot;)&quot; .
+ParameterList  = ParameterDecl { &quot;,&quot; ParameterDecl } .
+ParameterDecl  = [ IdentifierList ] [ &quot;...&quot; ] Type .
+</code></pre><p>Within a list of parameters or results, the names (IdentifierList) must either all be present or all be absent. If present, each name stands for one item (parameter or result) of the specified type and all non-<a href="https://golang.google.cn/ref/spec#Blank_identifier" target="_blank">blank</a> names in the signature must be <a href="https://golang.google.cn/ref/spec#Uniqueness_of_identifiers" target="_blank">unique</a>. If absent, each type stands for one item of that type. Parameter and result lists are always parenthesized except that if there is exactly one unnamed result it may be written as an unparenthesized type.</p>
+<p>The final incoming parameter in a function signature may have a type prefixed with <code>...</code>. A function with such a parameter is called <em>variadic</em> and may be invoked with zero or more arguments for that parameter.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span>()
+<span class="hljs-keyword">func</span>(x <span class="hljs-keyword">int</span>) <span class="hljs-keyword">int</span>
+<span class="hljs-keyword">func</span>(a, _ <span class="hljs-keyword">int</span>, z <span class="hljs-keyword">float32</span>) <span class="hljs-keyword">bool</span>
+<span class="hljs-keyword">func</span>(a, b <span class="hljs-keyword">int</span>, z <span class="hljs-keyword">float32</span>) (<span class="hljs-keyword">bool</span>)
+<span class="hljs-keyword">func</span>(prefix <span class="hljs-keyword">string</span>, values ...<span class="hljs-keyword">int</span>)
+<span class="hljs-keyword">func</span>(a, b <span class="hljs-keyword">int</span>, z <span class="hljs-keyword">float64</span>, opt ...<span class="hljs-keyword">interface</span>{}) (success <span class="hljs-keyword">bool</span>)
+<span class="hljs-keyword">func</span>(<span class="hljs-keyword">int</span>, <span class="hljs-keyword">int</span>, <span class="hljs-keyword">float64</span>) (<span class="hljs-keyword">float64</span>, *[]<span class="hljs-keyword">int</span>)
+<span class="hljs-keyword">func</span>(n <span class="hljs-keyword">int</span>) <span class="hljs-keyword">func</span>(p *T)
+</code></pre>
+<h3 id="210&#x63A5;&#x53E3;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.10.&#x63A5;&#x53E3;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>An interface type specifies a <a href="https://golang.google.cn/ref/spec#Method_sets" target="_blank">method set</a> called its <em>interface</em>. A variable of interface type can store a value of any type with a method set that is any superset of the interface. Such a type is said to <em>implement the interface</em>. The value of an uninitialized variable of interface type is <code>nil</code>.</p>
+<pre><code class="lang-go">InterfaceType      = <span class="hljs-string">&quot;interface&quot;</span> <span class="hljs-string">&quot;{&quot;</span> { MethodSpec <span class="hljs-string">&quot;;&quot;</span> } <span class="hljs-string">&quot;}&quot;</span> .
+MethodSpec         = MethodName Signature | InterfaceTypeName .
+MethodName         = identifier .
+InterfaceTypeName  = TypeName .
+</code></pre>
+<p>As with all method sets, in an interface type, each method must have a <a href="https://golang.google.cn/ref/spec#Uniqueness_of_identifiers" target="_blank">unique</a> non-<a href="https://golang.google.cn/ref/spec#Blank_identifier" target="_blank">blank</a> name.</p>
+<pre><code class="lang-go"><span class="hljs-comment">// A simple File interface.</span>
+<span class="hljs-keyword">interface</span> {
+    Read([]<span class="hljs-keyword">byte</span>) (<span class="hljs-keyword">int</span>, error)
+    Write([]<span class="hljs-keyword">byte</span>) (<span class="hljs-keyword">int</span>, error)
+    Close() error
+}
+<span class="hljs-keyword">interface</span> {
+    String() <span class="hljs-keyword">string</span>
+    String() <span class="hljs-keyword">string</span>  <span class="hljs-comment">// illegal: String not unique</span>
+    _(x <span class="hljs-keyword">int</span>)         <span class="hljs-comment">// illegal: method must have non-blank name</span>
+}
+</code></pre>
+<p>More than one type may implement an interface. For instance, if two types <code>S1</code> and <code>S2</code> have the method set</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (p T) Read(p []<span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error)   { <span class="hljs-keyword">return</span> &#x2026; }
+<span class="hljs-keyword">func</span> (p T) Write(p []<span class="hljs-keyword">byte</span>) (n <span class="hljs-keyword">int</span>, err error)  { <span class="hljs-keyword">return</span> &#x2026; }
+<span class="hljs-keyword">func</span> (p T) Close() error                       { <span class="hljs-keyword">return</span> &#x2026; }
+</code></pre>
+<p>(where <code>T</code> stands for either <code>S1</code> or <code>S2</code>) then the <code>File</code> interface is implemented by both <code>S1</code> and <code>S2</code>, regardless of what other methods <code>S1</code> and <code>S2</code> may have or share.</p>
+<p>A type implements any interface comprising any subset of its methods and may therefore implement several distinct interfaces. For instance, all types implement the <em>empty interface</em>:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">interface</span>{}
+</code></pre>
+<p>Similarly, consider this interface specification, which appears within a <a href="https://golang.google.cn/ref/spec#Type_declarations" target="_blank">type declaration</a> to define an interface called <code>Locker</code>:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Locker <span class="hljs-keyword">interface</span> {
+    Lock()
+    Unlock()
+}
+</code></pre>
+<p>If <code>S1</code> and <code>S2</code> also implement</p>
+<pre><code>func (p T) Lock() { &#x2026; }
+func (p T) Unlock() { &#x2026; }
+</code></pre><p>they implement the <code>Locker</code> interface as well as the <code>File</code> interface.</p>
+<p>An interface <code>T</code> may use a (possibly qualified) interface type name <code>E</code> in place of a method specification. This is called <em>embedding</em> interface <code>E</code> in <code>T</code>; it adds all (exported and non-exported) methods of <code>E</code> to the interface <code>T</code>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> ReadWriter <span class="hljs-keyword">interface</span> {
+    Read(b Buffer) <span class="hljs-keyword">bool</span>
+    Write(b Buffer) <span class="hljs-keyword">bool</span>
+}
+
+<span class="hljs-keyword">type</span> File <span class="hljs-keyword">interface</span> {
+    ReadWriter  <span class="hljs-comment">// same as adding the methods of ReadWriter</span>
+    Locker      <span class="hljs-comment">// same as adding the methods of Locker</span>
+    Close()
+}
+
+<span class="hljs-keyword">type</span> LockedFile <span class="hljs-keyword">interface</span> {
+    Locker
+    File        <span class="hljs-comment">// illegal: Lock, Unlock not unique</span>
+    Lock()      <span class="hljs-comment">// illegal: Lock not unique</span>
+}
+</code></pre>
+<p>An interface type <code>T</code> may not embed itself or any interface type that embeds <code>T</code>, recursively.</p>
+<pre><code>// illegal: Bad cannot embed itself
+type Bad interface {
+    Bad
+}
+
+// illegal: Bad1 cannot embed itself using Bad2
+type Bad1 interface {
+    Bad2
+}
+type Bad2 interface {
+    Bad1
+}
+</code></pre><h3 id="211&#x5B57;&#x5178;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.11.&#x5B57;&#x5178;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A map is an unordered group of elements of one type, called the element type, indexed by a set of unique <em>keys</em> of another type, called the key type. The value of an uninitialized map is <code>nil</code>.</p>
+<pre><code class="lang-go">MapType     = <span class="hljs-string">&quot;map&quot;</span> <span class="hljs-string">&quot;[&quot;</span> KeyType <span class="hljs-string">&quot;]&quot;</span> ElementType .
+KeyType     = Type .
+</code></pre>
+<p>The <a href="https://golang.google.cn/ref/spec#Comparison_operators" target="_blank">comparison operators</a> <code>==</code> and <code>!=</code> must be fully defined for operands of the key type; thus the key type must not be a function, map, or slice. If the key type is an interface type, these comparison operators must be defined for the dynamic key values; failure will cause a <a href="https://golang.google.cn/ref/spec#Run_time_panics" target="_blank">run-time panic</a>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">int</span>
+<span class="hljs-keyword">map</span>[*T]<span class="hljs-keyword">struct</span>{ x, y <span class="hljs-keyword">float64</span> }
+<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}
+</code></pre>
+<p>The number of map elements is called its length. For a map <code>m</code>, it can be discovered using the built-in function <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>len</code></a> and may change during execution. Elements may be added during execution using <a href="https://golang.google.cn/ref/spec#Assignments" target="_blank">assignments</a> and retrieved with <a href="https://golang.google.cn/ref/spec#Index_expressions" target="_blank">index expressions</a>; they may be removed with the <a href="https://golang.google.cn/ref/spec#Deletion_of_map_elements" target="_blank"><code>delete</code></a> built-in function.</p>
+<p>A new, empty map value is made using the built-in function <a href="https://golang.google.cn/ref/spec#Making_slices_maps_and_channels" target="_blank"><code>make</code></a>, which takes the map type and an optional capacity hint as arguments:</p>
+<pre><code class="lang-go"><span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">int</span>)
+<span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">int</span>, <span class="hljs-number">100</span>)
+</code></pre>
+<p>The initial capacity does not bound its size: maps grow to accommodate the number of items stored in them, with the exception of <code>nil</code> maps. A <code>nil</code> map is equivalent to an empty map except that no elements may be added.</p>
+<h3 id="212&#x901A;&#x9053;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;">2.12.&#x901A;&#x9053;&#x7C7B;&#x578B;-&#x6570;&#x636E;&#x7C7B;&#x578B;</h3>
+<p>A channel provides a mechanism for <a href="https://golang.google.cn/ref/spec#Go_statements" target="_blank">concurrently executing functions</a> to communicate by <a href="https://golang.google.cn/ref/spec#Send_statements" target="_blank">sending</a> and <a href="https://golang.google.cn/ref/spec#Receive_operator" target="_blank">receiving</a> values of a specified element type. The value of an uninitialized channel is <code>nil</code>.</p>
+<pre><code class="lang-go">ChannelType = ( <span class="hljs-string">&quot;chan&quot;</span> | <span class="hljs-string">&quot;chan&quot;</span> <span class="hljs-string">&quot;&lt;-&quot;</span> | <span class="hljs-string">&quot;&lt;-&quot;</span> <span class="hljs-string">&quot;chan&quot;</span> ) ElementType .
+</code></pre>
+<p>The optional <code>&lt;-</code> operator specifies the channel <em>direction</em>, <em>send</em> or <em>receive</em>. If no direction is given, the channel is <em>bidirectional</em>. A channel may be constrained only to send or only to receive by <a href="https://golang.google.cn/ref/spec#Assignments" target="_blank">assignment</a> or explicit <a href="https://golang.google.cn/ref/spec#Conversions" target="_blank">conversion</a>.</p>
+<pre><code class="lang-go"><span class="hljs-keyword">chan</span> T          <span class="hljs-comment">// can be used to send and receive values of type T</span>
+<span class="hljs-keyword">chan</span>&lt;- <span class="hljs-keyword">float64</span>  <span class="hljs-comment">// can only be used to send float64s</span>
+&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>      <span class="hljs-comment">// can only be used to receive ints</span>
+</code></pre>
+<p>The <code>&lt;-</code> operator associates with the leftmost <code>chan</code> possible:</p>
+<pre><code class="lang-go"><span class="hljs-keyword">chan</span>&lt;- <span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>    <span class="hljs-comment">// same as chan&lt;- (chan int)</span>
+<span class="hljs-keyword">chan</span>&lt;- &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>  <span class="hljs-comment">// same as chan&lt;- (&lt;-chan int)</span>
+&lt;-<span class="hljs-keyword">chan</span> &lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>  <span class="hljs-comment">// same as &lt;-chan (&lt;-chan int)</span>
+<span class="hljs-keyword">chan</span> (&lt;-<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>)
+</code></pre>
+<p>A new, initialized channel value can be made using the built-in function <a href="https://golang.google.cn/ref/spec#Making_slices_maps_and_channels" target="_blank"><code>make</code></a>, which takes the channel type and an optional <em>capacity</em> as arguments:</p>
+<pre><code class="lang-go"><span class="hljs-built_in">make</span>(<span class="hljs-keyword">chan</span> <span class="hljs-keyword">int</span>, <span class="hljs-number">100</span>)
+</code></pre>
+<p>The capacity, in number of elements, sets the size of the buffer in the channel. If the capacity is zero or absent, the channel is unbuffered and communication succeeds only when both a sender and receiver are ready. Otherwise, the channel is buffered and communication succeeds without blocking if the buffer is not full (sends) or not empty (receives). A <code>nil</code> channel is never ready for communication.</p>
+<p>A channel may be closed with the built-in function <a href="https://golang.google.cn/ref/spec#Close" target="_blank"><code>close</code></a>. The multi-valued assignment form of the <a href="https://golang.google.cn/ref/spec#Receive_operator" target="_blank">receive operator</a> reports whether a received value was sent before the channel was closed.</p>
+<p>A single channel may be used in <a href="https://golang.google.cn/ref/spec#Send_statements" target="_blank">send statements</a>, <a href="https://golang.google.cn/ref/spec#Receive_operator" target="_blank">receive operations</a>, and calls to the built-in functions <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>cap</code></a> and <a href="https://golang.google.cn/ref/spec#Length_and_capacity" target="_blank"><code>len</code></a> by any number of goroutines without further synchronization. Channels act as first-in-first-out queues. For example, if one goroutine sends values on a channel and a second goroutine receives them, the values are received in the order sent.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2020-02-16-Go工具链汇总.html" class="navigation navigation-prev " aria-label="Previous page: Go工具链汇总">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2020-02-14-Go语言学习Day02-学习日志.html" class="navigation navigation-next " aria-label="Next page: Day02-学习日志">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day01-基本类型","date":"2020-02-13T01:35:30.000Z","draft":false,"level":"1.8.5","depth":2,"next":{"title":"Day02-学习日志","level":"1.8.6","depth":2,"path":"source00/2020-02-14-Go语言学习Day02-学习日志.md","ref":"./source00/2020-02-14-Go语言学习Day02-学习日志.md","articles":[]},"previous":{"title":"Go工具链汇总","level":"1.8.4","depth":2,"path":"source00/2020-02-16-Go工具链汇总.md","ref":"./source00/2020-02-16-Go工具链汇总.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"source00/2020-02-13-Go语言学习Day01-基本类型.md","mtime":"2020-03-25T08:19:25.020Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-25T08:20:08.026Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

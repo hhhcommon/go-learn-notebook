@@ -1,0 +1,838 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Day04-Gin框架入门 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="2020-02-16-Go语言学习Day04-notebook数据库建库.html" />
+    
+    
+    <link rel="prev" href="2020-02-15-Go语言学习Day03-学习日志.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Go语言学习笔记-汇总
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="2020-03-20-go学习笔记.md">
+            
+                <span>
+            
+                    
+                    2020-03-20-go学习笔记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    一、Go语言基础
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    二、Go语言标准库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    三、Go语言第三方库
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    四、Go语言项目
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    五、尚硅谷Go语言学习笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../ShangGuiGu-HanShunPing-goHeXinBianCheng/">
+            
+                <a href="../ShangGuiGu-HanShunPing-goHeXinBianCheng/">
+            
+                    
+                    课程目录【尚硅谷】新版 GO语言+区块链就业班 全套（600p完结）
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    六、《Go语言从入门到实践》徐波 学习笔记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../go-xvbo/">
+            
+                <a href="../go-xvbo/">
+            
+                    
+                    Go语言从入门到实践-汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../go-xvbo/9-1.html">
+            
+                <a href="../go-xvbo/9-1.html">
+            
+                    
+                    9.1 轻量级线程（goroutine
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    七、Go语言学习日记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="2020-02-15-千锋教育-Go语言培训课表内容.html">
+            
+                <a href="2020-02-15-千锋教育-Go语言培训课表内容.html">
+            
+                    
+                    Go语言培训课表内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="2020-02-15-千锋教育-全部资源网盘疫情时期公开.html">
+            
+                <a href="2020-02-15-千锋教育-全部资源网盘疫情时期公开.html">
+            
+                    
+                    千锋教育-全部资源网盘疫情时期公开
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="2020-01-13-Go语言学习-Day00.html">
+            
+                <a href="2020-01-13-Go语言学习-Day00.html">
+            
+                    
+                    Day00-初识和计划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="2020-02-16-Go工具链汇总.html">
+            
+                <a href="2020-02-16-Go工具链汇总.html">
+            
+                    
+                    Go工具链汇总
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="2020-02-13-Go语言学习Day01-基本类型.html">
+            
+                <a href="2020-02-13-Go语言学习Day01-基本类型.html">
+            
+                    
+                    Day01-基本类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="2020-02-14-Go语言学习Day02-学习日志.html">
+            
+                <a href="2020-02-14-Go语言学习Day02-学习日志.html">
+            
+                    
+                    Day02-学习日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.7" data-path="2020-02-15-Go语言学习Day03-学习日志.html">
+            
+                <a href="2020-02-15-Go语言学习Day03-学习日志.html">
+            
+                    
+                    Day03-学习日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.8" data-path="2020-02-16-Go语言学习Day04-Gin框架入门.html">
+            
+                <a href="2020-02-16-Go语言学习Day04-Gin框架入门.html">
+            
+                    
+                    Day04-Gin框架入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.9" data-path="2020-02-16-Go语言学习Day04-notebook数据库建库.html">
+            
+                <a href="2020-02-16-Go语言学习Day04-notebook数据库建库.html">
+            
+                    
+                    Day04-notebook数据库建库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.10" data-path="2020-02-17-Go语言学习Day05-完整博客项目代码模仿和MySQL知识学习.html">
+            
+                <a href="2020-02-17-Go语言学习Day05-完整博客项目代码模仿和MySQL知识学习.html">
+            
+                    
+                    Day05-完整博客项目代码模仿和MySQL知识学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.11" data-path="2020-03-20-Go语言学习Day06-操作系统和jvm.html">
+            
+                <a href="2020-03-20-Go语言学习Day06-操作系统和jvm.html">
+            
+                    
+                    Day06-操作系统和jvm
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.12" data-path="2020-03-25-Go语言学习笔记Day07-微服务、ProtoBuf和RPC.html">
+            
+                <a href="2020-03-25-Go语言学习笔记Day07-微服务、ProtoBuf和RPC.html">
+            
+                    
+                    Day07-微服务、ProtoBuf和RPC
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Day04-Gin框架入门</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="go&#x8BED;&#x8A00;&#x5B66;&#x4E60;day04--gin&#x6846;&#x67B6;&#x5165;&#x95E8;">Go&#x8BED;&#x8A00;&#x5B66;&#x4E60;Day04 -Gin&#x6846;&#x67B6;&#x5165;&#x95E8;</h1>
+<h2 id="1-gin&#x6846;&#x67B6;&#x521D;&#x8BC6;">1. Gin&#x6846;&#x67B6;&#x521D;&#x8BC6;</h2>
+<p>&#x5B98;&#x7F51;&#xFF1A; <a href="https://gin-gonic.com/" target="_blank">Gin Web Framework</a></p>
+<p>github&#xFF1A; <a href="https://github.com/gin-gonic/gin" target="_blank">gin-gonic/gin: Gin is a HTTP web framework written in Go (Golang). It features a Martini-like API with much better performance -- up to 40 times faster. If you need smashing performance, get yourself some Gin.</a></p>
+<p>&#x4E09;&#x65B9;&#x8D44;&#x6599;&#xFF1A; </p>
+<ul>
+<li><p><a href="https://www.liwenzhou.com/posts/Go/Gin_framework/" target="_blank">Gin&#x6846;&#x67B6;&#x4ECB;&#x7ECD;&#x53CA;&#x4F7F;&#x7528; | &#x674E;&#x6587;&#x5468;&#x7684;&#x535A;&#x5BA2;</a></p>
+</li>
+<li><p><a href="https://blog.csdn.net/u010670757/article/details/52213445" target="_blank">&#x57FA;&#x4E8E;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x6E90;&#x63D0;&#x4F9B;&#x7EDF;&#x4E00;&#x7684;RESTful&#x98CE;&#x683C;&#x7684;API<em>Java</em>&#x6D77;&#x666F;&#x7684;&#x70B9;&#x70B9;&#x6EF4;&#x6EF4;-CSDN&#x535A;&#x5BA2;</a></p>
+</li>
+<li><a href="https://www.zhihu.com/question/264610995/answer/286995897" target="_blank">&#x5982;&#x4F55;&#x8BC4;&#x4EF7; Golang &#x7684; gin &#x6846;&#x67B6;&#xFF1F; - &#x77E5;&#x4E4E;</a></li>
+</ul>
+<h2 id="2-gin&#x6846;&#x67B6;&#x6982;&#x8FF0;">2. Gin&#x6846;&#x67B6;&#x6982;&#x8FF0;</h2>
+<h3 id="21-&#x7B80;&#x5355;&#x793A;&#x4F8B;">2.1 &#x7B80;&#x5355;&#x793A;&#x4F8B;</h3>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> <span class="hljs-string">&quot;github.com/gin-gonic/gin&quot;</span>
+
+<span class="hljs-keyword">func</span> main() {
+    r := gin.Default()
+    r.GET(<span class="hljs-string">&quot;/ping&quot;</span>, <span class="hljs-keyword">func</span>(c *gin.Context) {
+        c.JSON(<span class="hljs-number">200</span>, gin.H{
+            <span class="hljs-string">&quot;message&quot;</span>: <span class="hljs-string">&quot;pong&quot;</span>,
+        })
+    })
+    r.Run() <span class="hljs-comment">// listen and serve on 0.0.0.0:8080</span>
+}
+</code></pre>
+<h3 id="22-gin&#x6846;&#x67B6;&#x7B80;&#x4ECB;">2.2 Gin&#x6846;&#x67B6;&#x7B80;&#x4ECB;</h3>
+<h3 id="23-gin&#x6846;&#x67B6;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;">2.3 Gin&#x6846;&#x67B6;&#x7684;&#x57FA;&#x51C6;&#x6D4B;&#x8BD5;</h3>
+<h3 id="23-gin&#x6846;&#x67B6;&#x7684;&#x4F18;&#x7F3A;&#x70B9;">2.3 Gin&#x6846;&#x67B6;&#x7684;&#x4F18;&#x7F3A;&#x70B9;</h3>
+<h2 id="3-gin&#x6846;&#x67B6;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;">3. Gin&#x6846;&#x67B6;&#x793A;&#x4F8B;&#x7A0B;&#x5E8F;</h2>
+<h3 id="31-ascii-json">3.1 ASCII-JSON</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;net/http&quot;</span>
+    <span class="hljs-string">&quot;github.com/gin-gonic/gin&quot;</span>
+)
+
+<span class="hljs-keyword">func</span> main() {
+    r := gin.Default()
+
+    r.GET(<span class="hljs-string">&quot;/someJSON&quot;</span>, <span class="hljs-keyword">func</span>(c *gin.Context) {
+        data := <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>]<span class="hljs-keyword">interface</span>{}{
+            <span class="hljs-string">&quot;lang&quot;</span>: <span class="hljs-string">&quot;GO&#x8BED;&#x8A00;&quot;</span>,
+            <span class="hljs-string">&quot;tag&quot;</span>:  <span class="hljs-string">&quot;&lt;br&gt;&quot;</span>,
+        }
+
+        <span class="hljs-comment">// will output : {&quot;lang&quot;:&quot;GO\u8bed\u8a00&quot;,&quot;tag&quot;:&quot;\u003cbr\u003e&quot;}</span>
+        c.AsciiJSON(http.StatusOK, data)
+    })
+
+    <span class="hljs-comment">// Listen and serve on 0.0.0.0:8080</span>
+    r.Run(<span class="hljs-string">&quot;:8080&quot;</span>)
+}
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby3u904a3j30u40503zq.jpg" alt="image-20200216115814818"></p>
+<h3 id="32-bind-form-data-request-with-custom-struct">3.2 Bind form-data request with custom struct</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;github.com/gin-gonic/gin&quot;</span>
+
+)
+
+<span class="hljs-keyword">type</span> StructA <span class="hljs-keyword">struct</span> {
+    FieldA <span class="hljs-keyword">string</span> <span class="hljs-string">`form:&quot;field_a&quot;`</span>
+}
+
+<span class="hljs-keyword">type</span> StructB <span class="hljs-keyword">struct</span> {
+    NestedStruct StructA
+    FieldB <span class="hljs-keyword">string</span> <span class="hljs-string">`form:&quot;field_b&quot;`</span>
+}
+
+<span class="hljs-keyword">type</span> StructC <span class="hljs-keyword">struct</span> {
+    NestedStructPointer *StructA
+    FieldC <span class="hljs-keyword">string</span> <span class="hljs-string">`form:&quot;field_c&quot;`</span>
+}
+
+<span class="hljs-keyword">type</span> StructD <span class="hljs-keyword">struct</span> {
+    NestedAnonyStruct <span class="hljs-keyword">struct</span> {
+        FieldX <span class="hljs-keyword">string</span> <span class="hljs-string">`form:&quot;field_x&quot;`</span>
+    }
+    FieldD <span class="hljs-keyword">string</span> <span class="hljs-string">`form:&quot;field_d&quot;`</span>
+}
+
+<span class="hljs-keyword">func</span> GetDataB(c *gin.Context) {
+    <span class="hljs-keyword">var</span> b StructB
+    c.Bind(&amp;b)
+    c.JSON(<span class="hljs-number">200</span>, gin.H{
+        <span class="hljs-string">&quot;a&quot;</span>: b.NestedStruct,
+        <span class="hljs-string">&quot;b&quot;</span>: b.FieldB,
+    })
+}
+
+<span class="hljs-keyword">func</span> GetDataC(c *gin.Context) {
+    <span class="hljs-keyword">var</span> b StructC
+    c.Bind(&amp;b)
+    c.JSON(<span class="hljs-number">200</span>, gin.H{
+        <span class="hljs-string">&quot;a&quot;</span>: b.NestedStructPointer,
+        <span class="hljs-string">&quot;c&quot;</span>: b.FieldC,
+    })
+}
+
+<span class="hljs-keyword">func</span> GetDataD(c *gin.Context) {
+    <span class="hljs-keyword">var</span> b StructD
+    c.Bind(&amp;b)
+    c.JSON(<span class="hljs-number">200</span>, gin.H{
+        <span class="hljs-string">&quot;x&quot;</span>: b.NestedAnonyStruct,
+        <span class="hljs-string">&quot;d&quot;</span>: b.FieldD,
+    })
+}
+
+<span class="hljs-keyword">func</span> main() {
+    r := gin.Default()
+    r.GET(<span class="hljs-string">&quot;/getb&quot;</span>, GetDataB)
+    r.GET(<span class="hljs-string">&quot;/getc&quot;</span>, GetDataC)
+    r.GET(<span class="hljs-string">&quot;/getd&quot;</span>, GetDataD)
+
+    r.Run()
+}
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby444i15zj30nk056t94.jpg" alt="image-20200216120748789"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby44g9buqj30nq05maaf.jpg" alt="image-20200216120808390"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby44rsnloj30ng04yt94.jpg" alt="image-20200216120827018"></p>
+<h3 id="33-&#x7ED1;&#x5B9A;html&#x7684;checkbox-bind-html-checkboxes">3.3 &#x7ED1;&#x5B9A;HTML&#x7684;Checkbox (Bind html checkboxes)</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<p><strong>form.html</strong></p>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>&#x7ED1;&#x5B9A;HTML&#x7684;Checkbox<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>&#x7ED1;&#x5B9A;HTML&#x7684;Checkbox<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>/&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">form</span> <span class="hljs-attr">action</span>=<span class="hljs-string">&quot;/&quot;</span> <span class="hljs-attr">method</span>=<span class="hljs-string">&quot;POST&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span>Check some colors<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;red&quot;</span>&gt;</span>Red<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;colors[]&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;red&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;red&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;green&quot;</span>&gt;</span>Green<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;colors[]&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;green&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;green&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">label</span> <span class="hljs-attr">for</span>=<span class="hljs-string">&quot;blue&quot;</span>&gt;</span>Blue<span class="hljs-tag">&lt;/<span class="hljs-name">label</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;checkbox&quot;</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;colors[]&quot;</span> <span class="hljs-attr">value</span>=<span class="hljs-string">&quot;blue&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;blue&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;submit&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">form</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<p><strong>mian.go</strong></p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;github.com/gin-gonic/gin&quot;</span>
+
+)
+
+<span class="hljs-keyword">type</span> myForm <span class="hljs-keyword">struct</span> {
+    Colors []<span class="hljs-keyword">string</span> <span class="hljs-string">`form:&quot;colors[]&quot;`</span>
+}
+
+
+<span class="hljs-keyword">func</span> formHandler(c *gin.Context) {
+    <span class="hljs-keyword">var</span> fakeForm myForm
+    c.ShouldBind(&amp;fakeForm)
+    c.JSON(<span class="hljs-number">200</span>, gin.H{<span class="hljs-string">&quot;color&quot;</span>: fakeForm.Colors})
+}
+
+<span class="hljs-keyword">func</span> main() {
+    r := gin.Default()
+
+    r.LoadHTMLGlob(<span class="hljs-string">&quot;./*&quot;</span>)
+    r.GET(<span class="hljs-string">&quot;/&quot;</span>, indexHandler)
+    r.POST(<span class="hljs-string">&quot;/&quot;</span>, formHandler)
+
+    r.Run() <span class="hljs-comment">// listen and serve on 0.0.0.0:8080</span>
+}
+
+<span class="hljs-keyword">func</span> indexHandler(c *gin.Context) {
+    c.HTML(<span class="hljs-number">200</span>, <span class="hljs-string">&quot;from.html&quot;</span>, <span class="hljs-literal">nil</span>)
+}
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h5 id="&#x7ED3;&#x679C;1">&#x7ED3;&#x679C;1</h5>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby4m2t9o9j30po0fawft.jpg" alt="image-20200216122504873"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby4o975p8j30k80460t3.jpg" alt="image-20200216122710037"></p>
+<h5 id="&#x7ED3;&#x679C;2">&#x7ED3;&#x679C;2</h5>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby4sk8xfsj30q80eimyh.jpg" alt="image-20200216123117740"></p>
+<p><img src="https://tva1.sinaimg.cn/large/0082zybpgy1gby4npfz3gj30lw04kaae.jpg" alt="image-20200216122637858"></p>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+<h3 id="34">3.4</h3>
+<h4 id="&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;">&#x7A0B;&#x5E8F;&#x4EE3;&#x7801;&#xFF1A;</h4>
+<pre><code class="lang-go">
+
+</code></pre>
+<h4 id="&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;">&#x6267;&#x884C;&#x7ED3;&#x679C;&#xFF1A;</h4>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="2020-02-15-Go语言学习Day03-学习日志.html" class="navigation navigation-prev " aria-label="Previous page: Day03-学习日志">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="2020-02-16-Go语言学习Day04-notebook数据库建库.html" class="navigation navigation-next " aria-label="Next page: Day04-notebook数据库建库">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Day04-Gin框架入门","date":"2020-02-16T02:50:42.000Z","draft":false,"level":"1.8.8","depth":2,"next":{"title":"Day04-notebook数据库建库","level":"1.8.9","depth":2,"path":"source00/2020-02-16-Go语言学习Day04-notebook数据库建库.md","ref":"./source00/2020-02-16-Go语言学习Day04-notebook数据库建库.md","articles":[]},"previous":{"title":"Day03-学习日志","level":"1.8.7","depth":2,"path":"source00/2020-02-15-Go语言学习Day03-学习日志.md","ref":"./source00/2020-02-15-Go语言学习Day03-学习日志.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"source00/2020-02-16-Go语言学习Day04-Gin框架入门.md","mtime":"2020-03-25T08:19:25.020Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-25T08:20:08.026Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
