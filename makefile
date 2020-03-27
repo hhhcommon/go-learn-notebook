@@ -1,0 +1,2 @@
+debug:
+	gitbook serve
