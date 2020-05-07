@@ -18,6 +18,5 @@
 ├── source02 // 文档-Go语言标准库
 ├── source03 // 文档-Go语言第三方库
 ├── source04 // 文档-Go语言项目
-└── time-notebook // 源码-在线记事本实战项目
 
 ````
